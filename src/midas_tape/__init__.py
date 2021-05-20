@@ -61,9 +61,6 @@ EVENT_PROGRAM_TEMPLATE = """
 """
 
 
-# In[6]:
-
-
 MIDAS_PROGRAM = f"""
 input data
 input range
