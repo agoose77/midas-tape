@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "midaspy"
+name = "midas-tape"
 version = "0.1.0"
 description = "Read MIDAS tape server files"
 authors = ["Angus Hollands <goosey15@gmail.com>"]
 license = "BSD-3"
 packages = [
-  { include = "midaspy", from = "src" },
+  { include = "midas_tape", from = "src" },
 ]
 
 
