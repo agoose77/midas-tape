@@ -1,21 +1,17 @@
-[tool.poetry]
-name = "midas-tape"
-version = "0.1.0"
-description = "Read MIDAS tape server files"
-authors = ["Angus Hollands <goosey15@gmail.com>"]
-license = "BSD-3"
-packages = [
-  { include = "midas_tape", from = "src" },
+[project]
+authors = [
+    {name = "Angus Hollands", email = "goosey15@gmail.com"},
 ]
-
-
-[tool.poetry.dependencies]
-python = "^3.7"
-awkward = "^1.2.0"
-numpy = "^1.13.1"
-
-[tool.poetry.dev-dependencies]
+requires-python = ">=3.7"
+dependencies = [
+    "awkward>=2.0.0",
+    "numpy>=1.13.1",
+]
+name = "midas-tape"
+version = "1.0.0"
+description = "Read MIDAS tape server files"
+license = {text = "BSD-3"}
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
